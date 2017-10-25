@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Daft-Punk-MusicPlayer.iml" filepath="$PROJECT_DIR$/.idea/Daft-Punk-MusicPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TriviaGame.iml" filepath="$PROJECT_DIR$/.idea/TriviaGame.iml" />
     </modules>
   </component>

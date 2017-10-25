@@ -299,9 +299,6 @@ function playSong(library) {
 
     songPlaying.play();
 
-    //Waits until song is over and plays another songs
-    songPlaying.addEventListener("ended", () => randomSong(songs));
-
 }
 
 
