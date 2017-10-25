@@ -64,5 +64,5 @@
 
 <ul>
     <li><strong>https://codepen.io/alrod-dev/pen/LzwOqo</strong></li>
-    <li><strong>https://medcheck-.herokuapp.com/</strong></li>
+    <li><strong>https://alrod909.github.io/Daft-Punk-MusicSelector/</strong></li>
 </ul>
