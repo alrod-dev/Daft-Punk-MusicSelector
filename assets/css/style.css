@@ -284,8 +284,8 @@ h1.display-4, h2.display-4 {
 /*Social Media layer of footer CSS*/
 #myFooter .social-networks {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 5%;
+    padding-bottom: 7%;
 }
 
 #myFooter .social-networks a {
@@ -341,9 +341,5 @@ h1.display-4, h2.display-4 {
         width: 50%;
         margin: auto;
     }
-
-}
-
-@media screen and (max-width: 640px) {
 
 }
