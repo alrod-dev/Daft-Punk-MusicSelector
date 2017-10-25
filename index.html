@@ -1,0 +1,185 @@
+<!--Author: Alfredo Rodriguez-->
+<!--File: index.html-->
+<!--Date: 9/25/2017-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device=width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Alfredo Rodriguez">
+
+    <title>Daft Punk | Song Selector</title>
+
+
+    <!--Stylesheets and CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="icon" href="http://res.cloudinary.com/alrod909/image/upload/v1508947263/daft-punk/daftPunkIcon.png">
+
+</head>
+<body>
+
+<!--Sound Files-->
+
+<!--All Sounds files have been uploaded to a cloud based service Cloudinary
+They are later used as href references to use the images and sounds files-->
+
+<!--clips-->
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508954654/daft-punk/Tron_Identity_Disc_Sound_Effect.mp3"
+       id="tronDisc"></audio>
+
+<!--Songs-->
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508947437/daft-punk/Daft_Punk_-_Harder_Better_Faster_Stronger.mp3"
+       id="harderSong"></audio>
+<audio src="https://cloudinary.com/console/media_library#/dialog/video/upload/daft-punk%2FTron_Legacy_-_Soundtrack_OST_-_03_The_Son_of_Flynn_-_Daft_Punk"
+       id="tronSong"></audio>
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508947441/daft-punk/Daft_Punk_-_Get_Lucky_Full_Video.mp3"
+       id="getLucky"></audio>
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508947439/daft-punk/Daft_Punk_-_Instant_Crush_ft._Julian_Casablancas.mp3"
+       id="instantCrush"></audio>
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508947430/daft-punk/Daft_Punk_-_Lose_Yourself_to_Dance_Official_Version.mp3"
+       id="dance"></audio>
+<audio src="http://res.cloudinary.com/alrod909/video/upload/v1508947440/daft-punk/The_Weeknd_-_I_Feel_It_Coming_ft._Daft_Punk_-_Full_Song.mp3"
+       id="weekndSong"></audio>
+
+<!--Outer Container-->
+<div class="container-fluid">
+
+    <!--jumbotron container-->
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container">
+
+            <!--First page row-->
+            <div class="row" id="firstPage">
+
+                <!--Row with header/title-->
+                <div class="row">
+
+                    <h1 class="display-3" id="title">Daft Punk</h1>
+                    <h1 class="display-4" id="subTitle">Music Player</h1>
+
+                </div>
+
+
+                <!--Row with many body for buttons, links , etc-->
+                <div class="row">
+                    <!--button gets displayed first-->
+                    <button class="btn btn-design1" id="selectSong">Select Song</button>
+
+                </div>
+
+            </div>
+
+
+            <!--Second page row-->
+            <div class="row" id="secondPage">
+
+                <div class="row" id="secondHeader">
+
+                    <h2 class="display-3 songTitle" id="title2">Select A Song To Play, Pause Or Restart</h2>
+
+                </div>
+
+                <div class="buttonSongs">
+
+                    <button class="display-4 songs" id="song1">The Weeknd - I Feel It Coming ft. Daft Punk</button>
+
+
+                    <button class="display-4 songs" id="song2">Daft Punk - Instant Crush ft. Julian Casablancas</button>
+
+
+                    <button class="display-4 songs" id="song3">Daft Punk - Get Lucky</button>
+
+
+                    <button class="display-4 songs" id="song4">Daft Punk - Harder Better Faster</button>
+
+
+                    <button class="display-4 songs" id="song5">Daft Punk - Lose Yourself to Dance</button>
+
+                    <button type="button" class="btn btn-primary songTitle" id="backButton">
+                        Go Back
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <!--Title of the modal-->
+                <h5 class="modal-title" id="modalLabel">What Would You Like to do with the song?</h5>
+
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!--Modal Buttons-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary modalBtn" id="pause">Pause Song</button>
+                <button type="button" class="btn btn-secondary modalBtn" id="restart">Restart Song</button>
+                <button type="button" class="btn btn-primary modalBtn" id="play">Play/Resume Song</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Footer with all social media info-->
+<footer id="myFooter">
+
+    <!--Social Media icons grabbed from font-awesome-->
+    <div class="social-networks">
+        <a href="https://github.com/alrod909" class="github" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alfredo-wiesner" class="linkedin" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
+        <a href="https://stackoverflow.com/users/7982074/alfredo-rodriguez" class="stackoverflow" target="_blank"><i
+                class="fa fa-stack-overflow"></i></a>
+    </div>
+
+    <!--Copyright information Alfredo Rodriguez-->
+    <div class="footer-copyright">
+        <p>Copyright © 2017 <a href="https://www.linkedin.com/in/alfredo-wiesner" target="_blank">Alfredo
+            Rodriguez</a></p>
+    </div>
+</footer>
+
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="assets/js/app.js">
+
+
+</script>
+
+</body>
+</html>

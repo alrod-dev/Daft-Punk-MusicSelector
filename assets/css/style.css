@@ -1,0 +1,349 @@
+/*Author: Alfredo Rodriguez*/
+/*Date: 9/25/2017*/
+/*
+    Global Page Settings
+ */
+/*Imports Google Audiowide Font*/
+/*The font cant be selected as such:
+font-family: 'Audiowide', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+/*Sets the background images to the body*/
+body {
+    background: url("http://res.cloudinary.com/alrod909/image/upload/v1508947269/daft-punk/daftpunk.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Jumbotron image in the center of the screen*/
+.jumbotron {
+
+    /*Layout*/
+    width: 85%;
+    height: auto;
+
+    /*margins*/
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 5%;
+
+    /*Allows the background image to be
+    visible to give it a good aesthetic*/
+    opacity: 0.95;
+
+    overflow: hidden;
+}
+
+/*container inside of the jumbotron
+that keeps everything organized*/
+.container {
+    width: 50%;
+    margin-right: auto;
+}
+
+
+/*Header title in Jumbotron*/
+h1.display-3, h2.display-3 {
+    font-size: 3.5em;
+    margin-top: 10%;
+
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+
+}
+
+#title2, .songs
+{
+    font-size: 1.5em;
+}
+
+h1.display-4, h2.display-4 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+
+    font-size: 2.5em;
+    margin-top: 5%;
+}
+
+/*Timer font info*/
+.display-4 {
+    margin-top: 10%;
+}
+
+/*!*Select Song Button*/
+
+/*Which plays the animations of tron*/
+/*and plays tron song when hovered on*!*/
+.btn {
+    font-family: 'Audiowide', cursive;
+
+    border-radius: 0;
+    padding: 0;
+    font-weight: 700;
+
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    outline: none !important;
+}
+
+/*Creates nice aesthetic to the button*/
+.btn-design1 {
+    background: none;
+    color: #22AFCA !important;
+    transition: all 280ms ease-in-out 0s;
+    letter-spacing: 1px;
+}
+
+/*Before and after affect on button*/
+.btn-design1::after, .btn-design1::before {
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    transition: all 280ms ease-in-out 0s;
+    width: 0;
+    box-shadow: 0px 0px 0px #22AFCA;
+}
+
+/*Creates spacing between left when hovered on*/
+.btn-design1:hover {
+    letter-spacing: 4px;
+}
+
+/*Before and after effect on button hover on*/
+.btn-design1:hover::after, .btn-design1:hover::before {
+    border: 1px solid #22AFCA;
+    transition: width 350ms ease-in-out 0s;
+    width: 100%;
+    box-shadow: 0 0 19px 1px #0c75d7;
+}
+
+/*Selection page for songs*/
+
+/*Buttons for selecting songs*/
+.songs {
+    border: 0;
+    padding: 0;
+
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+
+    font-size: 2em;
+    margin-top: 10%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    background-color: transparent;
+
+    width: 100%;
+
+}
+
+/*Styling for go back and title*/
+.songTitle {
+    border: 0;
+    padding: 0;
+
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+
+    font-size: 2em;
+    margin-top: 10%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    background-color: transparent;
+
+    width: 100%;
+
+}
+
+/*Changing settings for Title*/
+#title2 {
+
+    font-size: 3em;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    width: 150%;
+}
+
+/*Color and alignment for header row*/
+#secondHeader {
+    margin-right: 25%;
+    color: #22AFCA;
+    text-decoration: underline;
+}
+
+#backButton {
+    color: black;
+}
+
+#backButton:hover {
+    color: white;
+    border: solid black 2px;
+}
+
+/*When songs are hovered on little effect*/
+.songs:hover {
+
+    padding: 10px;
+
+    background: rgba(160, 44, 255, 0.28);
+
+    border: solid black 2px;
+
+    text-align: center;
+}
+
+/*Modal Settings*/
+
+/*Modal Title*/
+.modal-title {
+    margin: 0;
+    line-height: 2;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*Modal Button Designs*/
+.modalBtn {
+    margin-top: 5%;
+
+    margin-bottom: 5% !important;
+
+    overflow: hidden;
+
+    font-size: 2em;
+
+}
+
+#restart:hover, #pause:hover {
+    background-color: #413f44;
+    color: snow;
+}
+
+#play:hover {
+    background-color: darkblue;
+}
+
+/*Footer CSS*/
+
+#myFooter {
+    background-color: transparent;
+    color: #1F2833;
+}
+
+#myFooter .footer-copyright {
+    background-color: #383737;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter a {
+    color: #7d7d7d;
+    text-decoration: none;
+}
+
+#myFooter a:hover {
+    color: #d2d1d1;
+}
+
+#myFooter .myCols {
+    text-align: center;
+}
+
+/*Social Media layer of footer CSS*/
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #1F2833;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+
+}
+
+/*Colors for the Social links*/
+#myFooter .linkedin:hover {
+    color: #00ACED;
+}
+
+#myFooter .stackoverflow:hover {
+    color: #ef622a;
+}
+
+#myFooter .github:hover {
+    color: #968d9c;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    h1.display-3, h1.display-4,
+    .btn-primary, .songTitle,
+    #title2, #title {
+
+        font-size: 1.5em;
+
+    }
+
+    .btn-design1, .songs, #backButton, .modalBtn, .modal-title {
+        font-size: 1em;
+    }
+
+    .modal-content
+    {
+        align-content: center;
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
