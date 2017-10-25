@@ -8,36 +8,25 @@
 <h2>Front Page</h2>
 
 <p style="text-align: center">
-    <img src="http://res.cloudinary.com/alrod909/image/upload/v1507745915/medCheck/mainPage_kxptl7.png" width="100%">
+    <img src="http://res.cloudinary.com/alrod909/image/upload/v1508974029/daft-punk/mainPage.png" width="100%">
 </p>
 
 <hr>
 
-<h2>About Us</h2>
+<h2>Song Selection</h2>
 
 <p style="text-align: center">
-    <img src="" width="100%">
+    <img src="http://res.cloudinary.com/alrod909/image/upload/v1508974019/daft-punk/SongSelection.png" width="100%">
 </p>
 
 <hr>
 
-<h2>Modals</h2>
+<h2>Song Status Selection</h2>
 
 <p style="text-align: center">
-    <img src="http://res.cloudinary.com/alrod909/image/upload/v1507745912/medCheck/reminder_pafku7.png" width="100%">
+    <img src="http://res.cloudinary.com/alrod909/image/upload/v1508973998/daft-punk/modal.png" width="100%">
 </p>
 
-<p style="text-align: center">
-    <img src="http://res.cloudinary.com/alrod909/image/upload/v1507745914/medCheck/finishFillingOutForm_ajszsl.png" width="100%">
-</p>
-
-<hr>
-
-<h2>My Meds</h2>
-
-<p style="text-align: center">
-    <img src="http://res.cloudinary.com/alrod909/image/upload/v1507745913/medCheck/myMeds_jcxhrp.png" width="100%">
-</p>
 
 <hr>
 
